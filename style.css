@@ -1,0 +1,49 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+#center{
+	margin: 0 auto;
+	width: 80rem;
+	height: 12rem;
+}
+
+ul{
+	margin-top: 2rem;
+	margin-left:1rem;
+	list-style-type: none;
+    background-color: #303030;
+	height: 3rem;
+}
+ul li{
+	display: inline-block;
+	padding: 0.7rem;
+	
+}
+ul li a{
+	color: white;
+	font-size: 1.3rem;	
+	text-decoration:none;
+	font-family: arial;
+}
+ul li:hover {
+	color: #8b8383;
+	background-color: black;
+	animation: menushade 1s;	
+	transition-timing-function: ease-out;
+}
+
+ul li:hover a{
+	color: #8b8383;
+}
+ul::before {
+	content: '';
+	margin-left: 20px;
+}
+
+@keyframes menushade {
+	0%   {background: #303030;}
+    100% {background: black; }
+}
